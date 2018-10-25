@@ -70,7 +70,7 @@ def prune_expired_proposals(terracoind):
 def sentinel_ping(terracoind):
     printdbg("in sentinel_ping")
 
-    terracoind.ping()
+    #terracoind.ping()
 
     printdbg("leaving sentinel_ping")
 
@@ -204,6 +204,7 @@ def main():
     #
     # load "gobject list" rpc command data, sync objects into internal database
     perform_terracoind_object_sync(terracoind)
+
 
     if terracoind.has_sentinel_ping:
         sentinel_ping(terracoind)
