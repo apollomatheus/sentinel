@@ -17,12 +17,12 @@ min_terracoind_proto_version_with_sentinel_ping = 70208
 def get_terracoin_conf():
     home = os.environ.get('HOME')
 
-    terracoin_conf = "/etc/terracoincore/terracoin.conf"
+    terracoin_conf = "/etc/zcore/zcore.conf"
     if (not os.path.isfile(terracoin_conf)):
-        terracoin_conf = os.path.join(home, ".terracoincore/terracoin.conf")
+        terracoin_conf = os.path.join(home, ".zcore/zcore.conf")
 
     if sys.platform == 'darwin':
-        terracoin_conf = os.path.join(home, "Library/Application Support/TerracoinCore/terracoin.conf")
+        terracoin_conf = os.path.join(home, "Library/Application Support/ZCore/zcore.conf")
 
     terracoin_conf = sentinel_cfg.get('terracoin_conf', terracoin_conf)
 
