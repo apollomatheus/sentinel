@@ -2,11 +2,11 @@
 
 An all-powerful toolset for ZCore.
 
-Sentinel is an autonomous agent for persisting, processing and automating ZCore V12.1.8 governance objects and tasks.
+Sentinel is an autonomous agent for persisting, processing and automating ZCore V1.6.0 governance objects and tasks.
 
-Sentinel is implemented as a Python application that binds to a local version 12.1.8 zcore instance on each ZCore V12.1.8 Masternode.
+Sentinel is implemented as a Python application that binds to a local version 1.6.0 zcore instance on each ZCore V1.6.0 Masternode.
 
-This guide covers installing Sentinel onto an existing 12.1.8 ZCore masternode in Ubuntu 14.04 / 16.04.
+This guide covers installing Sentinel onto an existing 1.6.0 ZCore masternode in Ubuntu 14.04 / 16.04.
 
 ## Installation
 
