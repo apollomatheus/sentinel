@@ -21,7 +21,7 @@ Make sure Python version 2.7.x or above is installed:
 Update system packages and ensure virtualenv and git are installed:
 
     sudo apt-get update
-    sudo apt-get -y install python-virtualenv git
+    sudo apt-get -y install python-virtualenv virtualenv git
 
 Make sure the local Terracoin daemon running is at least version 12.1.8 (120108)
 
@@ -32,7 +32,7 @@ Make sure the local Terracoin daemon running is at least version 12.1.8 (120108)
 Clone the Sentinel repo and install Python dependencies.
 
     git clone https://github.com/terracoin/sentinel.git && cd sentinel
-    virtualenv ./venv (your VPS may not come with virtualenv to install type: apt install virtualenv)
+    virtualenv ./venv
     ./venv/bin/pip install -r requirements.txt
 
 ### 3. Set up Cron
